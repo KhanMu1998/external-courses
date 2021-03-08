@@ -1,10 +1,7 @@
 function arrayMaxValue(arr) {
-  let max = arr[1];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
-    }
-  }
-  return max;
+  return arr.reduce(function (max, current) {
+    if (max < current) return current;
+    return max;
+  }, arr[0]);
 }
 module.exports = arrayMaxValue;

@@ -1,14 +1,17 @@
 function arrayOddEvenCount(arr) {
-  let evenCount = 0,
-    oddCount = 0,
-    zeroCount = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if ((arr[i] !== undefined) & (arr[i] !== null)) {
-      if (arr[i] === 0) zeroCount++;
-      else if (arr[i] % 2 === 0) evenCount++;
-      else if (arr[i] % 2 === 1) oddCount++;
+  let evenCount = 0;
+  let oddCount = 0;
+  let zeroCount = 0;
+
+  arr.foreach((element) => {
+    if (element === undefined || element === null) {
+      return;
     }
-  }
+    if (element === 0) zeroCount += 1;
+    else if (element % 2 === 0) evenCount += 1;
+    else if (element % 2 === 1) oddCount += 1;
+  });
+
   let arrayCounted = [evenCount, oddCount, zeroCount];
 
   let outputResult = "четных: " + evenCount + "; нечетных: " + oddCount;
