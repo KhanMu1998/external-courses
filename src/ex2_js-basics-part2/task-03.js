@@ -3,7 +3,7 @@ function arrayOddEvenCount(arr) {
   let oddCount = 0;
   let zeroCount = 0;
 
-  arr.foreach((element) => {
+  arr.forEach((element) => {
     if (element === undefined || element === null) {
       return;
     }

@@ -1,16 +1,14 @@
 function arrayEqualValues(arr) {
-  for (let i = 0; i < arr.length - 1; i++) {
-    if (arr[i] !== arr[i + 1]) return false;
-  }
-  return true;
+  let res = true;
 
-  // arr.foreach(function(element, index, ar) => {
-  //   if (element !== ar[index + 1]) return false;
-  // });
-  // return true;
+  arr.forEach((element) => {
+    if (element !== arr[0]) res = false;
+  });
+
+  return res;
 }
 
-// arr = [2, 2, 3, 2];
+// arr = [2, 2, 2, 2];
 // console.log(arrayEqualValues(arr));
 
 module.exports = arrayEqualValues;
