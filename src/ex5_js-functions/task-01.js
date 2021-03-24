@@ -1,29 +1,43 @@
 let Calculator = {
   result: 0,
 
-  reset: function () {
-    this.result = 0;
-    return this.result;
-  },
-  getResult: function () {
-    return this.result;
+  reset() {
+    Calculator.result = 0;
+    return Calculator.result;
   },
 
-  add: function (value) {
-    this.result += value;
-    return this.result;
+  getResult() {
+    return Calculator.result;
   },
-  subtract: function (value) {
-    this.result -= value;
-    return this.result;
+
+  add(value) {
+    if (value === undefined) return Calculator.result;
+    Calculator.result += value;
+    return Calculator.result;
   },
-  divide: function (value) {
-    this.result /= value;
-    return this.result;
+
+  subtract(value) {
+    if (value === undefined) return Calculator.result;
+    Calculator.result -= value;
+    return Calculator.result;
   },
-  multiply: function (value) {
-    this.result *= value;
-    return this.result;
+
+  divide(value) {
+    if (value === undefined) return Calculator.result;
+
+    if ((value === 0) | (value === Infinity)) {
+      console.log("Недопустимая операция");
+      return Calculator.result;
+    }
+
+    Calculator.result /= value;
+    return Calculator.result;
+  },
+
+  multiply(value) {
+    if (value === undefined) return Calculator.result;
+    Calculator.result *= value;
+    return Calculator.result;
   },
 };
 
