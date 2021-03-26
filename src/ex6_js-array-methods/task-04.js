@@ -1,4 +1,4 @@
-function every(arr, callback) {
+function filter(arr, callback) {
   const newArr = [];
   for (let i = 0; i < arr.length; i++) {
     if (callback(arr[i], i, arr)) newArr.push(arr[i]);
@@ -7,4 +7,4 @@ function every(arr, callback) {
   return newArr;
 }
 
-module.exports = every;
+module.exports = filter;
