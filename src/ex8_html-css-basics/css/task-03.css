@@ -1,0 +1,26 @@
+.box {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.brd1 {
+  border: 1px solid black;
+}
+
+.brd2 {
+  outline: 2px solid black;
+}
+
+.brd3 {
+  padding: 3px;
+  background: black;
+}
+
+.brd3 div {
+  background: white;
+}
+
+.brd4 {
+  box-shadow: 0 0px 4px black;
+}
