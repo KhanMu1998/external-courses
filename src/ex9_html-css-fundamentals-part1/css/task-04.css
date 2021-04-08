@@ -1,0 +1,81 @@
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.task_div {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task_div p {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0 0 3px black;
+}
+
+.first_way {
+  background: #00b350;
+  box-shadow: 7px 7px #50d48c, 14px 14px 0 #aae4c4;
+}
+
+.second_way1 {
+  position: relative;
+  top: 14px;
+  left: 14px;
+  background: #aae4c4;
+}
+
+.second_way2 {
+  position: relative;
+  top: -7px;
+  left: -7px;
+  background: #50d48c;
+}
+
+.second_way3 {
+  position: relative;
+  top: -7px;
+  left: -7px;
+  background: #00b350;
+}
+
+.third_way {
+  position: relative;
+  background: #00b350;
+}
+
+.third_way::before {
+  content: "";
+  width: 250px;
+  height: 150px;
+  background: #50d48c;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  z-index: -1;
+}
+
+.third_way::after {
+  content: "";
+  width: 250px;
+  height: 150px;
+  background: #aae4c4;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: -2;
+}
