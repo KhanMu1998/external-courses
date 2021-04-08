@@ -1,0 +1,9 @@
+#coloredDiv {
+  background-color: #1ba539;
+}
+.table1,
+.table1 th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
