@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+#table .name {
+  text-transform: capitalize;
+}
+
+#table .header {
+  padding: 7px 0;
+  background-color: #d4e4f8;
+  text-transform: uppercase;
+  color: rgb(110, 136, 163);
+}
+
+#table .data {
+  padding: 20px;
+  color: rgb(110, 136, 163);
+}
+
+#table .row:nth-child(even) {
+  background-color: #e9faff;
+}
+
+#table .row:nth-child(odd) {
+  background-color: rgb(224, 237, 255);
+}
+
+#table .row:hover {
+  background-color: #dbdbdb;
+}

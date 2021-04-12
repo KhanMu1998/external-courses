@@ -1,0 +1,22 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.img1 {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.img2 {
+  width: 300px;
+  height: 300px;
+  mask-image: url(../img/WhatsApp.png);
+  mask-size: 300px;
+  -webkit-mask-image: url(../img/WhatsApp.png);
+  -webkit-mask-size: 300px;
+}
