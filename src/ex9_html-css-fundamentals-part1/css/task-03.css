@@ -1,0 +1,70 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+button {
+  position: absolute;
+  width: 260px;
+  height: 80px;
+  box-shadow: 0 0 0 2px rgb(128, 128, 128);
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  outline: none;
+  background: linear-gradient(
+    0deg,
+    rgb(226, 226, 226) 0%,
+    rgb(201, 201, 201) 100%
+  );
+  font: 700 25px Arial;
+  color: #646464;
+  text-shadow: 0 1px 0 #e2e2e2;
+  cursor: pointer;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  height: 81%;
+  width: 95%;
+  top: 9%;
+  left: 2.5%;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 1px #616161;
+  background: linear-gradient(
+    0deg,
+    rgba(195, 195, 195, 1) 0%,
+    rgba(215, 215, 215, 1) 48%,
+    rgba(226, 226, 226, 1) 52%,
+    rgba(231, 231, 231, 1) 100%
+  );
+}
+
+button:active:before {
+  background: linear-gradient(
+    0deg,
+    rgba(180, 180, 180, 1) 0%,
+    rgba(200, 200, 200, 1) 48%,
+    rgba(215, 215, 215, 1) 52%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  box-shadow: 0 1px 3px #616161;
+}
+
+button span {
+  position: relative;
+}
+
+.star {
+  color: #9c9c9c;
+  text-shadow: 0 1px 0 #f0f0f0;
+}
