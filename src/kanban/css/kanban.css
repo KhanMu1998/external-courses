@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  font-family: Roboto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  width: 100%;
+  height: 55px;
+  background: #0067a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger_name {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.burger_name span {
+  margin-left: 10px;
+}
+
+.new_list_user {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 181px;
+  height: 33px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user_menu {
+  cursor: pointer;
+}
+
+img[src="img/burger.svg"] {
+  cursor: pointer;
+}
+
+.new_list span {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer {
+  width: 100%;
+  height: 55px;
+  background: #0067a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.tasks_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tasks_container div {
+  width: 150px;
+  margin-left: 10%;
+}
+
+.kanban_board_by {
+  margin-right: 5%;
+}
+
+content {
+  width: 100%;
+  height: 100%;
+  background-color: #0079bf;
+}
