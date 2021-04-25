@@ -12,14 +12,14 @@ function userMenu() {
   if (!menuOpened) {
     document.querySelector(".user_arrow").style.transform = "rotateZ(180deg)";
     menuDrop = document.createElement("div");
-    menuDrop.setAttribute("class", "user_menu_drop");
+    menuDrop.setAttribute("class", "user_menu_dropdown");
     document.querySelector(".user_menu").appendChild(menuDrop);
     menuItems.forEach((item) => {
       menuElement = document.createElement("a");
-      menuElement.setAttribute("class", "user_menu_drop_link");
+      menuElement.setAttribute("class", "user_menu_dropdown_link");
       menuElement.setAttribute("href", item.url);
       menuElement.innerText = item.text;
-      document.querySelector(".user_menu_drop").appendChild(menuElement);
+      document.querySelector(".user_menu_dropdown").appendChild(menuElement);
     });
 
     menuOpened = true;

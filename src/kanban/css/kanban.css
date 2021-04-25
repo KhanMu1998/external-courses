@@ -23,7 +23,7 @@ body,
   flex-shrink: 0;
 }
 
-.burger_name {
+.burger_title_container {
   margin-left: 10px;
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,12 @@ body,
   line-height: 33px;
 }
 
-.burger_name span {
+.burger_name {
+  display: flex;
+  align-items: center;
+}
+
+.header_title {
   margin-left: 10px;
 }
 
@@ -82,12 +87,12 @@ img[src="img/burger.svg"] {
   color: #ffffff;
 }
 
-.tasks_container {
+.footer_tasks_info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.tasks_container div {
+.footer_tasks_info div {
   width: 150px;
   margin-left: 10%;
 }
@@ -102,7 +107,7 @@ content {
   background-color: #0079bf;
 }
 
-.user_menu_drop {
+.user_menu_dropdown {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -114,7 +119,7 @@ content {
   border-radius: 3px;
 }
 
-.user_menu_drop_link {
+.user_menu_dropdown_link {
   display: flex;
   padding-left: 10px;
   align-items: center;
@@ -123,7 +128,7 @@ content {
   text-decoration: none;
 }
 
-.user_menu_drop_link:hover {
+.user_menu_dropdown_link:hover {
   background-color: #0067a3;
   color: #ffffff;
   border-radius: 3px;
