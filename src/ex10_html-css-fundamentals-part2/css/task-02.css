@@ -1,0 +1,27 @@
+form {
+  font-family: Arial;
+}
+
+fieldset {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+label,
+textarea,
+span,
+div,
+.password {
+  margin-top: 15px;
+}
+
+.photo {
+  padding-bottom: 10px;
+  border-bottom: 2px solid gray;
+}
+
+.textarea {
+  align-self: flex-start;
+}
