@@ -44,12 +44,12 @@ input {
   outline: none;
 }
 
-#price {
-  width: 100%;
+.price_container {
+  width: 30%;
 }
 
-.price {
-  width: 30%;
+#price {
+  width: 100%;
 }
 
 .location {
