@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kanban</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/kanban.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="burger_title_container">
+          <div class="burger_name">
+            <img src="img/burger.svg" alt="burger" />
+          </div>
+          <div class="header_title">
+            <span>Awesome Kanban Board</span>
+          </div>
+        </div>
+        <div class="new_list_user">
+          <div class="new_list">
+            <img src="img/add.svg" alt="burger" />
+            <span>Create new list</span>
+          </div>
+          <div class="user_menu">
+            <img class="user_avatar" src="img/user_avatar.svg" alt="burger" />
+            <img class="user_arrow" src="img/user_arrow.svg" alt="burger" />
+          </div>
+        </div>
+      </header>
+      <content></content>
+      <footer class="footer">
+        <div class="footer_tasks_info">
+          <div class="active_tasks"><span>Active tasks: </span></div>
+          <div class="finished_tasks"><span>Finished tasks: </span></div>
+        </div>
+        <div class="kanban_board_by"><span>Kanban board by</span></div>
+      </footer>
+    </div>
+    <script src="js/kanban.js"></script>
+  </body>
+</html>

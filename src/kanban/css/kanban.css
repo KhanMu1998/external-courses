@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  font-family: Roboto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  width: 100%;
+  height: 55px;
+  background: #0067a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.burger_title_container {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.burger_name {
+  display: flex;
+  align-items: center;
+}
+
+.header_title {
+  margin-left: 10px;
+}
+
+.new_list_user {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 181px;
+  height: 33px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user_menu {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+img[src="img/burger.svg"] {
+  cursor: pointer;
+}
+
+.new_list span {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer {
+  width: 100%;
+  height: 55px;
+  background: #0067a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.footer_tasks_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_tasks_info div {
+  width: 150px;
+  margin-left: 10%;
+}
+
+.kanban_board_by {
+  margin-right: 5%;
+}
+
+content {
+  width: 100%;
+  height: 100%;
+  background-color: #0079bf;
+}
+
+.user_menu_dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 55px;
+  right: 0;
+  width: 120px;
+  background-color: #ebecf0;
+  border-radius: 3px;
+}
+
+.user_menu_dropdown_link {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  height: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.user_menu_dropdown_link:hover {
+  background-color: #0067a3;
+  color: #ffffff;
+  border-radius: 3px;
+}
